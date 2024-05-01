@@ -495,3 +495,30 @@ function validation() {
     text.style.color = '#00ff00'
   }
 }
+
+// freeze
+const freeze = (status) => {
+  (status) ? document.body.style.overflowY = "hidden" : document.body.style.overflowY = "auto";
+}
+
+// show modal
+const showModal = (openModal, modal, closeModal) => {
+  const openM = document.querySelector(`${openModal}`),
+        closeM = document.querySelector(`${closeModal}`),
+        m = document.querySelector(`${modal}`);
+
+  openM.addEventListener('click', (e) => {
+    e.preventDefault()
+    m.classList.add('show');
+    freeze(true);
+  })
+  // close
+  closeM.addEventListener('click', () => {
+    m.classList.remove('show');
+    freeze(false);
+  })
+}
+
+
+
+showModal("#sendDate", ".successfull__modal", ".close__success-modal");
