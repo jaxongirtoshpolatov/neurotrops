@@ -596,6 +596,10 @@
   // call modal
   .call__back-modal
   {
+    .modal__content
+    {
+      border-radius: 0;
+    }
     .modal__header
     {
       padding-bottom: 0;
@@ -624,12 +628,6 @@
         font-weight: 700;
         line-height: 26px; 
         text-transform: uppercase;
-      }
-      .yellow__btn
-      {
-        position: absolute;
-        bottom: 20px;
-        left: 30px;
       }
     }
   }

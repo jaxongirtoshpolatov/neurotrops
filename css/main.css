@@ -3095,6 +3095,9 @@ body.no-scroll {
     width: 74px;
     height: 64px;
   }
+  .call__back-modal .modal__content {
+    border-radius: 0;
+  }
   .call__back-modal .modal__header {
     padding-bottom: 0;
   }
@@ -3118,11 +3121,6 @@ body.no-scroll {
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-  }
-  .call__back-modal .tab__box .yellow__btn {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
   }
 }
 @media screen and (max-width: 800px) {
