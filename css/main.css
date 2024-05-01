@@ -893,6 +893,7 @@ body.no-scroll {
 .call__back-modal form {
   display: flex;
   flex-direction: column;
+  justify-content: end;
   gap: 40px;
 }
 .call__back-modal form input {
@@ -933,7 +934,7 @@ body.no-scroll {
   background: linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
 }
 .call__back-modal form p {
-  margin-top: -20px;
+  margin-top: 20px;
   font-family: "Aeroport", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -1328,9 +1329,49 @@ body.no-scroll {
 }
 
 .intro {
-  background: url(../../images/hero-bg.png) no-repeat;
+  background: url(../../images/img-slider-bg.png) no-repeat;
   background-size: 100% 100%;
   position: relative;
+}
+.intro__bg {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  transform: translateX(-40px);
+}
+.intro__bg .bottom__photo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.intro__bg .right__photo {
+  position: absolute;
+  right: 29px;
+  bottom: 0;
+}
+.intro__bg .white__light {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  opacity: 0.25;
+  background-color: #fff;
+  bottom: 149px;
+  right: 620px;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.intro__bg .yellow__light {
+  width: 64px;
+  height: 64px;
+  opacity: 0.75;
+  background-color: #CFEE13;
+  filter: blur(8px);
+  bottom: 446px;
+  right: 289px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
 }
 .intro .swiper-scrollbar {
   top: 287px;
@@ -2559,6 +2600,24 @@ body.no-scroll {
     max-width: 100%;
     height: 100vh;
   }
+  .intro__bg .right__photo {
+    width: 630px;
+    height: 353.5px;
+    right: -80px;
+    bottom: 18px;
+  }
+  .intro__bg .white__light {
+    width: 128px;
+    height: 128px;
+    bottom: 177px;
+    right: 318px;
+  }
+  .intro__bg .yellow__light {
+    width: 32px;
+    height: 32px;
+    bottom: 233px;
+    right: 31px;
+  }
 }
 @media screen and (max-width: 1150px) {
   .card__img {
@@ -2636,10 +2695,6 @@ body.no-scroll {
   }
   .intro .swiper-pagination {
     padding-bottom: 20px;
-  }
-  .intro {
-    background: url(../images/media-intro-bg.png) no-repeat, linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
-    background-size: 100% 100%;
   }
   .products {
     padding-top: 20px;
@@ -3157,10 +3212,6 @@ body.no-scroll {
   .home__page .intro {
     padding-top: 124px;
   }
-  .intro {
-    background: url(../images/intro-bg__mobile.png) no-repeat, linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
-    background-size: 100% 100%;
-  }
   .intro__swiper .sub__title {
     margin-top: 39px;
   }
@@ -3269,6 +3320,17 @@ body.no-scroll {
   }
   .points__tab .tab__item a {
     opacity: 1;
+  }
+  .intro__bg .right__photo {
+    right: -136px;
+    bottom: 10px;
+  }
+  .intro__bg .white__light {
+    right: 212px;
+  }
+  .intro__bg .yellow__light {
+    bottom: 312px;
+    right: 50px;
   }
 }
 

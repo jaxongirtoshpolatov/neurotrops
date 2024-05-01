@@ -43,6 +43,32 @@
       height: 100vh;
     }
   }
+  // intro__bg
+  .intro__bg
+  {
+    .right__photo
+    {
+      width: 630px;
+      height: 353.5px;
+      right: -80px;
+      bottom: 18px;
+    }
+    .white__light
+    {
+      width: 128px;
+      height: 128px;
+      bottom: 177px;
+      right: 318px;
+    }
+    .yellow__light
+    {
+      width: 32px;
+      height: 32px;
+      bottom: 233px;
+      right: 31px;
+  
+    }
+  }
 }
 @media screen and (max-width: 1150px) {
   .card__img {
@@ -121,11 +147,11 @@
   .intro .swiper-pagination {
     padding-bottom: 20px;
   }
-  .intro {
-    background: url(../images/media-intro-bg.png) no-repeat,
-      linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
-    background-size: 100% 100%;
-  }
+  // .intro {
+  //   background: url(../images/media-intro-bg.png) no-repeat,
+  //     linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
+  //   background-size: 100% 100%;
+  // }
   .products {
     padding-top: 20px;
     background: none;
@@ -670,6 +696,8 @@
       }
     }
   }
+  // intro__bg 
+ 
 }
 @media screen and (max-width: 700px) {
   .meida__menu .menu__bottom {
@@ -678,11 +706,11 @@
   .home__page .intro {
     padding-top: 124px;
   }
-  .intro {
-    background: url(../images/intro-bg__mobile.png) no-repeat,
-      linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
-    background-size: 100% 100%;
-  }
+  // .intro {
+  //   background: url(../images/intro-bg__mobile.png) no-repeat,
+  //     linear-gradient(149.04deg, #424242 31.25%, #000000 93.13%);
+  //   background-size: 100% 100%;
+  // }
   .intro__swiper .sub__title {
     margin-top: 39px;
   }
@@ -795,5 +823,24 @@
   }
   .points__tab .tab__item a {
     opacity: 1;
+  }
+  // intro bg
+  .intro__bg
+  {
+    .right__photo
+    {
+      right: -136px;
+      bottom: 10px;
+    }
+    .white__light
+    {
+      right: 212px;
+    }
+    .yellow__light
+    {
+      bottom: 312px;
+      right: 50px;
+
+    }
   }
 }

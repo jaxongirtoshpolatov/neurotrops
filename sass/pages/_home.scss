@@ -7,10 +7,54 @@
   }
 }
 .intro {
-  background: url(../../images/hero-bg.png) no-repeat;
+  background: url(../../images/img-slider-bg.png) no-repeat;
   background-size: 100% 100%;
   position: relative;
-
+  &__bg 
+  {
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    transform: translateX(-40px);
+    .bottom__photo
+    {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .right__photo
+    {
+      position: absolute;
+      right: 29px;
+      bottom: 0;
+    }
+    .white__light 
+    {
+      width: 256px;
+      height: 256px;
+      position: absolute;
+      opacity: 0.25;
+      background-color: #fff;
+      bottom: 149px;
+      right: 620px;
+      border-radius: 50%;
+      filter: blur(10px);
+    }
+    .yellow__light 
+    {
+      width: 64px;
+      height: 64px;
+      opacity: 0.75;
+      background-color: #CFEE13;
+      filter: blur(8px);
+      bottom: 446px;
+      right: 289px;
+      z-index: 2;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
   // swiper-scrollbar
   .swiper-scrollbar {
     top: 287px;

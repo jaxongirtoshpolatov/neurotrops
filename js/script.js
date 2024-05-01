@@ -1,3 +1,39 @@
+// input phone mask
+const iMaskInput = document.querySelectorAll('#ImaskInput');
+iMaskInput.forEach((maskedInput) => {
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  const mask = IMask(maskedInput, maskOptions);
+})
+
+// live validator script
+function validation() {
+  let form = document.getElementById('form')
+  let email = document.getElementById('email').value
+  let text = document.getElementById('check__status')
+  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+  if (email.match(pattern)) {
+    form.classList.add('valid')
+    form.classList.remove('invalid')
+    text.innerHTML = "Your Email Address in valid"
+    text.style.color = '#00ff00'
+  } else {
+    form.classList.remove('valid')
+    form.classList.add('invalid')
+    text.innerHTML = "Please Enter Valid Email Address"
+    text.style.color = '#ff0000'
+  }
+
+  if (email == '') {
+    form.classList.remove('valid')
+    form.classList.remove('invalid')
+    text.innerHTML = ""
+    text.style.color = '#00ff00'
+  }
+}
+
 // intro swiper
 try {
   var swiper = new Swiper(".intro__swiper", {
@@ -460,41 +496,63 @@ try {
   });
 } catch (error) {}
 
-// input phone mask
-const iMaskInput = document.querySelectorAll('#ImaskInput');
-iMaskInput.forEach((maskedInput) => {
-  const maskOptions = {
-    mask: '+{7}(000)000-00-00'
-  };
-  const mask = IMask(maskedInput, maskOptions);
-})
 
-// live validator script
-function validation() {
-  let form = document.getElementById('form')
-  let email = document.getElementById('email').value
-  let text = document.getElementById('check__status')
-  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
-  if (email.match(pattern)) {
-    form.classList.add('valid')
-    form.classList.remove('invalid')
-    text.innerHTML = "Your Email Address in valid"
-    text.style.color = '#00ff00'
-  } else {
-    form.classList.remove('valid')
-    form.classList.add('invalid')
-    text.innerHTML = "Please Enter Valid Email Address"
-    text.style.color = '#ff0000'
-  }
+// // live validator script
+// // function validation() {
+// //   let form = document.getElementById('form')
+// //   let email = document.getElementById('email').value
+// //   let text = document.getElementById('check__status')
+// //   let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
-  if (email == '') {
-    form.classList.remove('valid')
-    form.classList.remove('invalid')
-    text.innerHTML = ""
-    text.style.color = '#00ff00'
-  }
-}
+// //   if (email.match(pattern)) {
+// //     form.classList.add('valid')
+// //     form.classList.remove('invalid')
+// //     text.innerHTML = "Your Email Address in valid"
+// //     text.style.color = '#00ff00'
+// //   } else {
+// //     form.classList.remove('valid')
+// //     form.classList.add('invalid')
+// //     text.innerHTML = "Please Enter Valid Email Address"
+// //     text.style.color = '#ff0000'
+// //   }
+
+// //   if (email == '') {
+// //     form.classList.remove('valid')
+// //     form.classList.remove('invalid')
+// //     text.innerHTML = ""
+// //     text.style.color = '#00ff00'
+// //   }
+// // }
+// const liveEmailVal =  (form, email, checkStatus) => {
+//   let parent = document.getElementById(`${form}`)
+//   let input = document.getElementById(`${email}`).value
+//   let text = document.getElementById(`${checkStatus}`)
+//   let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+//   if (input.match(pattern)) {
+//     parent.classList.add('valid')
+//     parent.classList.remove('invalid')
+//     text.innerHTML = "Your Email Address in valid"
+//     text.style.color = '#00ff00'
+//   } else {
+//     parent.classList.remove('valid')
+//     parent.classList.add('invalid')
+//     text.innerHTML = "Please Enter Valid Email Address"
+//     text.style.color = '#ff0000'
+//   }
+
+//   if (input == '') {
+//     parent.classList.remove('valid')
+//     parent.classList.remove('invalid')
+//     text.innerHTML = ""
+//     text.style.color = '#00ff00'
+//   }
+// }
+
+// const emailInput = document.querySelectorAll('input[tyoe="email"]');
+// console.log(emailInput);
+
 
 // freeze
 const freeze = (status) => {

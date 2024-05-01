@@ -224,6 +224,12 @@
 						</svg>
 					</button>
 				</div>
+				<figure class="intro__bg">
+					<div class="white__light"></div>
+					<div class="yellow__light"></div>
+					<img class="right__photo" src="./images/img-mushroom 1.png" alt="">
+					<img class="bottom__photo" src="./images/img-grass.png" alt="">
+				</figure>
 			</section>
 
 			<section class="products">
@@ -1912,18 +1918,20 @@
 					<h4 class="tab__el">Сообщение</h4>
 				</div>
 				<div class="tab__content">
-					<form>
+					<form id="form">
 						<div class="form__box">
 							<label>Имя <span>*</span></label>
 							<input type="text" placeholder="Ваше имя">
 						</div>
 						<div class="form__box">
 							<label>Телефон <span>*</span></label>
-							<input type="number" placeholder="+7 (800) 000 00 00">
+							<input type="tel" placeholder="+7 (800) 000 00 00"
+							id="ImaskInput">
 						</div>
 						<div class="form__box">
 							<label>Почта <span>*</span></label>
-							<input type="email" placeholder="hello@inbox.ru">
+							<input type="email" placeholder="hello@inbox.ru" id="email">
+							<span id="check__status"></span>
 						</div>
 						<p>Заполняя форму обратной связи Вы соглашаетесь с условиями обработки персональных данных.</p>
 						<button class="yellow__btn">Отправить</button>

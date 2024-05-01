@@ -432,13 +432,14 @@
 							</div>
 							<div class="form__box">
 								<div class="form__name">Телефон <span>*</span></div>
-								<input type="number" name="phone" placeholder="+7 (800) 000 00 00" id="two">
+								<input type="tel" name="phone" placeholder="+7 (800) 000 00 00" id="ImaskInput">
 								<label for="two" class="input__box">
 								</label>
 							</div>
 							<div class="form__box">
 								<div class="form__name">Почта <span>*</span></div>
-								<input type="email" name="email" placeholder="hello@inbox.ru" id="three">
+								<input type="email" name="email" placeholder="hello@inbox.ru" id="three" onkeydown="validation()">
+								<span id="check__status"></span>
 								<label for="three" class="input__box">
 								</label>
 								<span class="form__info">Заполняя форму обратной связи Вы соглашаетесь с условиями обработки
@@ -580,6 +581,7 @@
 
 	<!-- swiper js -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
 	<!-- custom js -->
 	<script src="./js/script.js"></script>
 </body>
