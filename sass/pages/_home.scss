@@ -877,6 +877,15 @@
   .sub__title {
     padding-bottom: 40px;
   }
+  .form__box
+  {
+    display: flex;
+    flex-direction: column;
+    #check__status
+    {
+      font-family: "TT Autonomous Trl Bold";
+    }
+  }
 }
 
 .product__img

@@ -460,8 +460,38 @@ try {
   });
 } catch (error) {}
 
-// const element = document.querySelector("input[tel]");
-// const maskOptions = {
-//   mask: "+{7}(000)000-00-00",
-// };
-// const mask = IMask(element, maskOptions);
+// input phone mask
+const iMaskInput = document.querySelectorAll('#ImaskInput');
+iMaskInput.forEach((maskedInput) => {
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  const mask = IMask(maskedInput, maskOptions);
+})
+
+// live validator script
+function validation() {
+  let form = document.getElementById('form')
+  let email = document.getElementById('email').value
+  let text = document.getElementById('check__status')
+  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+  if (email.match(pattern)) {
+    form.classList.add('valid')
+    form.classList.remove('invalid')
+    text.innerHTML = "Your Email Address in valid"
+    text.style.color = '#00ff00'
+  } else {
+    form.classList.remove('valid')
+    form.classList.add('invalid')
+    text.innerHTML = "Please Enter Valid Email Address"
+    text.style.color = '#ff0000'
+  }
+
+  if (email == '') {
+    form.classList.remove('valid')
+    form.classList.remove('invalid')
+    text.innerHTML = ""
+    text.style.color = '#00ff00'
+  }
+}

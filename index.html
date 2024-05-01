@@ -1714,7 +1714,7 @@
 				<div class="container">
 					<h1 class="title">обратная связь</h1>
 					<p class="sub__title">Мы готовы пообщаться лично</p>
-					<form class="feedback__form">
+					<form class="feedback__form" id="form">
 						<div class="form__boxes">
 							<div class="form__box">
 								<div class="form__name">Имя <span>*</span></div>
@@ -1724,15 +1724,16 @@
 							</div>
 							<div class="form__box">
 								<div class="form__name">Телефон <span>*</span></div>
-								<input type="tel" name="phone" placeholder="+7 (800) 000 00 00" id="two">
+								<input type="tel" name="phone" id="ImaskInput" placeholder="+7 (800) 000 00 00" id="two">
 								<label for="two" class="input__box">
 								</label>
 							</div>
 							<div class="form__box">
 								<div class="form__name">Почта <span>*</span></div>
-								<input type="email" name="email" placeholder="hello@inbox.ru" id="three">
+								<input type="email" name="email" id="email" placeholder="hello@inbox.ru" id="three" onkeydown="validation()">
 								<label for="three" class="input__box">
 								</label>
+								<span id="check__status"></span>
 								<span class="form__info">Заполняя форму обратной связи Вы соглашаетесь с условиями обработки
 									персональных
 									данных.</span>

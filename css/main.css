@@ -2071,6 +2071,13 @@ body.no-scroll {
 .feedback .sub__title {
   padding-bottom: 40px;
 }
+.feedback .form__box {
+  display: flex;
+  flex-direction: column;
+}
+.feedback .form__box #check__status {
+  font-family: "TT Autonomous Trl Bold";
+}
 
 .product__img .swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   opacity: 0.25 !important;
