@@ -1,0 +1,36 @@
+.about__page {
+  background: url(../images/about-page-bg.png) no-repeat, #000;
+  background-size: 100% 28.5%;
+  .about {
+    padding-bottom: 0;
+    background: none;
+    position: relative;
+  }
+  .events {
+    background: url(../images/quality-bg.png) no-repeat;
+    padding: 82px 0 291px;
+    background-size: 100% 100%;
+  }
+  .sub__title {
+    padding-bottom: 40px;
+  }
+  .events .desc {
+    max-width: 600px;
+  }
+  .title.line {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 88px;
+      left: 0;
+      width: 1580px;
+      height: 2px;
+      background: linear-gradient(144.7deg, #f7f7f7 10.78%, #bcbcbc 93.37%);
+      opacity: 0.1;
+    }
+  }
+  .btns {
+    margin-top: 40px;
+  }
+}

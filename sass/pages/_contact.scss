@@ -1,0 +1,26 @@
+.contact__bg {
+  background: url(../../images/contact-bg.png) no-repeat, #000 !important;
+  background-size: cover;
+  .delivery__page {
+    background-image: none;
+  }
+  .contact__box {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    padding-top: 40px;
+
+    .contact__title {
+      font-family: "TT Autonomous Trl Bold", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 38.4px;
+      text-transform: uppercase;
+    }
+    .desc {
+      color: #fff;
+      display: block;
+      padding-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+body {
+  font-family: "Aeroport", sans-serif;
+  font-weight: 300;
+  color: #fff;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+.title {
+  color: #fff;
+  font-family: "TT Autonomous Trl Bold", "Autonomous", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-transform: uppercase;
+}
+.title__sm {
+  font-family: "TT Autonomous Trl Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  color: #CFEE13;
+  text-transform: uppercase;
+}
+.desc {
+  font-size: 24px;
+  line-height: 38.4px;
+  font-weight: 300;
+}
+.sub__title {
+  font-size: 32px;
+  line-height: 51.2px;
+  color: #cfee13;
+}
+
+.tab {
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    font-size: 24px;
+    line-height: 38.4px;
+    color: #fff;
+    transition: all 0.2s linear;
+
+    &:hover,
+    &.active {
+      color: #cfee13;
+    }
+  }
+}

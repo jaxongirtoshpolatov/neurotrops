@@ -1,0 +1,57 @@
+.payment__page {
+  background: url(../images/payment-bg.png) no-repeat, #000;
+  background-size: 100% 39%;
+}
+.payment {
+  position: relative;
+  padding-bottom: 44px;
+
+  .title {
+    padding-bottom: 42px;
+    position: relative;
+    &.line::before {
+      content: "";
+      position: absolute;
+      top: 83px;
+      left: 0;
+      width: 1580px;
+      background: linear-gradient(144.7deg, #f7f7f7 10.78%, #bcbcbc 93.37%);
+      height: 2px;
+      opacity: 0.1;
+    }
+  }
+  .steps {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .step {
+      max-width: 820px;
+      width: 100%;
+
+      &:hover {
+        .step__title {
+          opacity: 0.25;
+        }
+        .step__content {
+          opacity: 1;
+        }
+      }
+    }
+    .step__title {
+      font-family: "TT Autonomous Trl Bold", sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 51.2px;
+      transition: all 0.2s linear;
+    }
+    .step__content {
+      opacity: 0.25;
+      transition: all 0.2s linear;
+    }
+    .title {
+      padding: 20px 0;
+    }
+  }
+}

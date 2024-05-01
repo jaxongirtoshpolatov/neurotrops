@@ -1,0 +1,22 @@
+.home__page .nav {
+  padding-bottom: 84px;
+}
+.nav {
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 10;
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    font-size: 20px;
+    line-height: 32px;
+    transition: color 0.3s linear;
+    color: #fff;
+    &.active,
+    &:hover {
+      color: #cfee13;
+    }
+  }
+}

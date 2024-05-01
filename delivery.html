@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#fff">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="description">
+	<title>Neurotrops</title>
+	<meta property="og:title" content="Neurotrops">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="description">
+	<meta property="og:image" content="images/icons/logo.svg">
+	<!-- font Aeroport -->
+	<link rel="stylesheet" href="fonts/aeraport/stylesheet.css">
+	<!-- font TT Autonomous Trl -->
+	<link rel="stylesheet" href="fonts/tt-autonomous/style.css">
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- normalize css -->
+	<link rel="stylesheet" href="./css/normalize.css">
+	<!-- custom css -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="wrapper delivery__page">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<a class="header__logo" href="#!">
+					<img src="images/icons/logo.svg" alt="company logo" width="100" height="64">
+				</a>
+				<div class="header__right">
+					<a class="phone__number" href="tel:+79672577729">+7 (967) 257 77 29</a>
+					<button>
+						<img src="images/icons/search.svg" alt="search icon" width="24" height="24">
+					</button>
+					<button class="favourite__box">
+						<img src="images/icons/heart.svg" alt="heart icon" width="27" height="24">
+						<div class="favourite__box-count">1</div>
+					</button>
+					<button>
+						<img src="images/icons/user.svg" alt="user" width="20" height="24">
+					</button>
+					<button class="cart">
+						<img src="images/icons/basket.svg" alt="basket" width="25" height="25">
+						<div class="cart__count">99</div>
+					</button>
+				</div>
+				<div class="media__right">
+					<button class="cart">
+						<img src="images/icons/basket.svg" alt="basket" width="25" height="25">
+						<div class="cart__count">99</div>
+					</button>
+					<button class="open__menu">
+						<img src="images/icons/menu.svg" alt="menu" width="32" height="20">
+					</button>
+				</div>
+			</div>
+
+			<div class="meida__menu">
+				<div class="content">
+					<div>
+						<div class="top">
+							<img src="images/icons/logo.svg" alt="logo" width="92" height="64px">
+							<button class="close__btn">
+								<img src="images/icons/close.svg" alt="close icon" width="20" height="20">
+							</button>
+						</div>
+						<nav>
+							<ul>
+								<li><a class="active" href="index.html">Главная</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="products.html">Продукция</a></li>
+								<div class="accordion">
+									<div class="accordion__header">
+										<h3 class="accordion__title">Продукция</h3>
+										<button class="accordion__arrow">
+											<img src="images/icons/plus.svg" alt="plus" width="20" height="20">
+										</button>
+									</div>
+									<div class="accordion__content">
+										<p class="desc">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, alias. Illo a praesentium totam,
+											aut,
+											libero molestias labore, ab iure numquam et saepe nemo corrupti. Aperiam voluptates dolorem dolore
+											quam!
+										</p>
+									</div>
+								</div>
+								<li><a href="index.html">Микродозинг</a></li>
+								<li><a href="delivery.html">Доставка</a></li>
+								<li><a href="#!">Партнёрам</a></li>
+								<li><a href="#!">Блог</a></li>
+								<li><a href="#!">F.A.Q.</a></li>
+								<li><a href="#!">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="menu__bottom">
+						<h5 class="bottom__title">Присоединяйтесь к нам!</h5>
+						<div class="social__media">
+							<a href="#!">
+								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M24 1.3623L20.1991 20.5067C20.1991 20.5067 19.669 21.837 18.2087 21.1968L12.8059 17.0563L9.34513 20.217C9.34513 20.217 9.07507 20.4271 8.775 20.2971L8.77829 20.2678L9.47499 14.316C9.47499 14.316 19.1872 5.58397 19.5873 5.21389C19.9874 4.8438 19.8574 4.76378 19.8574 4.76378C19.8774 4.31368 19.1372 4.76378 19.1372 4.76378L6.27025 12.9418L6.25594 12.9349L0.90472 11.1345C0.90472 11.1345 0.0845327 10.8445 0.00451441 10.2043C-0.0755039 9.56417 0.934727 9.2241 0.934727 9.2241L22.2496 0.862182C22.2496 0.862182 24 0.0920063 24 1.3623Z"
+										fill="white"></path>
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.0718 15.4874C4.87188 15.4874 0.194878 9.86587 0 0.511719H4.10743C4.24235 7.37743 7.27038 10.2856 9.66888 10.8852V0.511719H13.5366V6.43302C15.9051 6.17818 18.3933 3.47986 19.2328 0.511719H23.1004C22.4558 4.16943 19.7575 6.86775 17.8387 7.97705C19.7575 8.87649 22.8307 11.23 24 15.4874H19.7425C18.8281 12.6391 16.5497 10.4355 13.5366 10.1357V15.4874H13.0718Z"
+										fill="white"></path>
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9287 8L0.0722656 16L0.0722663 0L13.9287 8Z" fill="white"></path>
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 8.16C14.1257 8.16 15.84 9.87429 15.84 12C15.84 14.1257 14.1257 15.84 12 15.84C9.87429 15.84 8.16 14.1257 8.16 12C8.16 9.87429 9.87429 8.16 12 8.16ZM12 5.76C8.55429 5.76 5.76 8.55429 5.76 12C5.76 15.4457 8.55429 18.24 12 18.24C15.4457 18.24 18.24 15.4457 18.24 12C18.24 8.55429 15.4457 5.76 12 5.76Z"
+										fill="white" />
+									<path
+										d="M18.4114 7.02857C19.2067 7.02857 19.8514 6.38386 19.8514 5.58857C19.8514 4.79328 19.2067 4.14857 18.4114 4.14857C17.6161 4.14857 16.9714 4.79328 16.9714 5.58857C16.9714 6.38386 17.6161 7.02857 18.4114 7.02857Z"
+										fill="white" />
+									<path
+										d="M17.76 2.4C19.8857 2.4 21.6 4.11429 21.6 6.24V17.76C21.6 19.8857 19.8857 21.6 17.76 21.6H6.24C4.11429 21.6 2.4 19.8857 2.4 17.76V6.24C2.4 4.11429 4.11429 2.4 6.24 2.4H17.76ZM17.76 0H6.24C2.79429 0 0 2.79429 0 6.24V17.76C0 21.2057 2.79429 24 6.24 24H17.76C21.2057 24 24 21.2057 24 17.76V6.24C24 2.79429 21.2057 0 17.76 0Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+						<a class="phone__number" href="tel:+79672577729">+7 (967) 257 77 29</a>
+						<a class="email" href="mailto:hello@neurotrops.ru">hello@neurotrops.ru</a>
+						<div class="line"></div>
+						<p class="info">Интернет-магазин грибной продукции высочайшего качества, Neurotrops 2024 г.</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="main">
+			<div class="container">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a class="nav__link" href="#!">Главная</a></li>
+						<li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+						<li class="nav__item"><a class="nav__link" href="products.html">Продукция</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">Микродозинг</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">Покупка</a></li>
+						<li class="nav__item"><a class="nav__link active" href="#!">Доставка</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">Партнёрам</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">Блог</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">F.A.Q.</a></li>
+						<li class="nav__item"><a class="nav__link" href="#!">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<section class="delivery">
+				<div class="container">
+					<h1 class="title">Доставка</h1>
+					<p class="sub__title">Отправка заказов по всему Миру</p>
+					<div class="delivery__box">
+						<div class="accordion__box">
+							<div class="accordion">
+								<div class="accordion__header">
+									<h3 class="accordion__title">Самовывоз</h3>
+									<button class="accordion__arrow">
+										<img src="images/icons/plus.svg" alt="plus" width="20" height="20">
+									</button>
+								</div>
+								<div class="accordion__content">
+									<p class="desc">
+										По предварительному согласованию.
+									</p>
+									<p class="desc">
+										С помощью этого продукта можно улучшить работу мозга, работоспособность и снизить усталость. Сон
+										станет более приятным и
+										качественным, а ясность ума улучшится. Он также может помочь уменьшить депрессию и беспокойство,
+										повысить иммунитет.
+										Силы и бодрости прибавится. Вредные привычки могут быть сведены на нет. Кроме того, он обладает
+										мощным лекарственным
+										противопаразитарным действием.
+									</p>
+									<p class="desc">
+										Грибы известны в народной медицине. Красный мухомор и пантерный мухомор являются примерами
+										потенциально ядовитых грибов,
+										однако они совершенно безопасны для человека при соблюдении инструкций. В чем же именно заключается
+										различие между этими
+										двумя видами?
+									</p>
+									<p class="desc">
+										Сила действия пантерного мухомора в два-три раза выше, чем красного. Он оказывает гораздо более
+										значительное влияние на
+										функционирование человеческого мозга. Кроме того, пантерного мухомора способен нормализовать обмен
+										веществ благодаря
+										наличию биогенного амина холина, который оказывает значительное влияние на физиологию. Поэтому,
+										дозировка пантерного
+										мухомора ниже в сравнении с красным.
+									</p>
+								</div>
+							</div>
+							<div class="accordion">
+								<div class="accordion__header">
+									<h3 class="accordion__title">Курьерская доставка по Москве и МО</h3>
+									<button class="accordion__arrow">
+										<img src="images/icons/plus.svg" alt="plus" width="20" height="20">
+									</button>
+								</div>
+								<div class="accordion__content">
+									<p class="desc">
+										Отправим ваш заказ в день обращения. Стоимость рассчитывается при оформлении заказа, заказ оплачивается перед отправкой
+										курьера.
+									</p>
+									<p class="desc">
+										Стоимость рассчитывается при оформлении заказа, заказ оплачивается перед отправкой курьера.
+									</p>
+									<p class="desc">
+										Грибы известны в народной медицине. Красный мухомор и пантерный мухомор являются примерами потенциально ядовитых грибов,
+										однако они совершенно безопасны для человека при соблюдении инструкций. В чем же именно заключается различие между этими
+										двумя видами?
+									</p>
+									<p class="desc">
+										Сила действия пантерного мухомора в два-три раза выше, чем красного. Он оказывает гораздо более значительное влияние на
+										функционирование человеческого мозга. Кроме того, пантерного мухомора способен нормализовать обмен веществ благодаря
+										наличию биогенного амина холина, который оказывает значительное влияние на физиологию. Поэтому, дозировка пантерного
+										мухомора ниже в сравнении с красным.
+									</p>
+								</div>
+							</div>
+							<div class="accordion">
+								<div class="accordion__header">
+									<h3 class="accordion__title">По России</h3>
+									<button class="accordion__arrow">
+										<img src="images/icons/plus.svg" alt="plus" width="20" height="20">
+									</button>
+								</div>
+								<div class="accordion__content">
+									<p class="desc">
+										Транспортная компания СДЭК. Срок доставки: 3-5 дней.
+									</p>
+									<p class="desc">С помощью этого продукта можно улучшить работу мозга, работоспособность и снизить усталость. Сон станет более приятным и
+									качественным, а ясность ума улучшится. Он также может помочь уменьшить депрессию и беспокойство, повысить иммунитет.
+									Силы и бодрости прибавится. Вредные привычки могут быть сведены на нет. Кроме того, он обладает мощным лекарственным
+									противопаразитарным действием.</p>
+									<p class="desc">Грибы известны в народной медицине. Красный мухомор и пантерный мухомор являются примерами потенциально ядовитых грибов,
+									однако они совершенно безопасны для человека при соблюдении инструкций. В чем же именно заключается различие между этими
+									двумя видами?</p>
+									<p class="desc">Сила действия пантерного мухомора в два-три раза выше, чем красного. Он оказывает гораздо более значительное влияние на
+									функционирование человеческого мозга. Кроме того, пантерного мухомора способен нормализовать обмен веществ благодаря
+									наличию биогенного амина холина, который оказывает значительное влияние на физиологию. Поэтому, дозировка пантерного
+									мухомора ниже в сравнении с красным.</p>
+								</div>
+							</div>
+							<div class="accordion">
+								<div class="accordion__header">
+									<h3 class="accordion__title">По миру</h3>
+									<button class="accordion__arrow">
+										<img src="images/icons/plus.svg" alt="plus" width="20" height="20">
+									</button>
+								</div>
+								<div class="accordion__content">
+									<p class="desc">
+										Доставка осуществляется только Почтой России. Сроки уточняйте при оформлении заказа.
+									</p>
+									<p class="desc">С помощью этого продукта можно улучшить работу мозга, работоспособность и снизить усталость. Сон станет более приятным и
+									качественным, а ясность ума улучшится. Он также может помочь уменьшить депрессию и беспокойство, повысить иммунитет.
+									Силы и бодрости прибавится. Вредные привычки могут быть сведены на нет. Кроме того, он обладает мощным лекарственным
+									противопаразитарным действием.</p>
+									<p class="desc">Грибы известны в народной медицине. Красный мухомор и пантерный мухомор являются примерами потенциально ядовитых грибов,
+									однако они совершенно безопасны для человека при соблюдении инструкций. В чем же именно заключается различие между этими
+									двумя видами?</p>
+									<p class="desc">Сила действия пантерного мухомора в два-три раза выше, чем красного. Он оказывает гораздо более значительное влияние на
+									функционирование человеческого мозга. Кроме того, пантерного мухомора способен нормализовать обмен веществ благодаря
+									наличию биогенного амина холина, который оказывает значительное влияние на физиологию. Поэтому, дозировка пантерного
+									мухомора ниже в сравнении с красным.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="points">
+				<div class="container">
+					<h1 class="title">пункты выдачи</h1>
+					<ul class="points__tab">
+						<li class="tab__item">
+							<a class="active" href="#!">Москва</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Санкт-Петербург</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Краснодар</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Ростов-на-Дону</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Пенза</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Волгоград</a>
+						</li>
+						<li class="tab__item">
+							<a href="#!">Самара</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577332.5655323549!2d36.726221931425286!3d55.581033574963165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C%20Russia!5e0!3m2!1sen!2s!4v1713732988834!5m2!1sen!2s"
+					width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="point__logo">
+					<svg width="20" height="17" viewBox="0 0 112 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M26.9739 1.20256L10.3865 18.0467L11.4761 19.1197L28.0635 2.27553L26.9739 1.20256Z" fill="black" />
+						<path d="M29.784 5.14268L13.1966 21.9869L14.2862 23.0598L30.8736 6.21565L29.784 5.14268Z" fill="black" />
+						<path d="M95.7909 67.8457L79.2035 84.6899L80.2931 85.7629L96.8805 68.9187L95.7909 67.8457Z" fill="black" />
+						<path d="M97.1067 35.257L80.5193 52.1012L81.6089 53.1742L98.1963 36.33L97.1067 35.257Z" fill="black" />
+						<path d="M29.029 12.7186L2.37652 39.7835L3.4661 40.8565L30.1185 13.7916L29.029 12.7186Z" fill="black" />
+						<path d="M94.3644 8.56858L77.777 25.4128L78.8665 26.4857L95.454 9.64155L94.3644 8.56858Z" fill="black" />
+						<path d="M31.3352 71.8925L14.7478 88.7367L15.8373 89.8097L32.4248 72.9655L31.3352 71.8925Z" fill="black" />
+						<path d="M51.5219 35.8814L38.3376 49.2698L39.5788 50.4921L52.7632 37.1037L51.5219 35.8814Z" fill="black" />
+						<path d="M54.6918 40.6963L40.3598 55.2501L41.6011 56.4725L55.9331 41.9186L54.6918 40.6963Z" fill="black" />
+						<path d="M25.7839 84.9132L15.9006 94.9494L16.9674 96L26.8507 85.9638L25.7839 84.9132Z" fill="black" />
+						<path d="M62.6685 47.3309L52.7852 57.3671L54.0265 58.5894L63.9098 48.5532L62.6685 47.3309Z" fill="black" />
+						<path d="M76.1743 56.3626L66.291 66.3988L67.5323 67.6212L77.4155 57.585L76.1743 56.3626Z" fill="black" />
+						<path d="M81.8 58.4532L67.0572 73.4242L68.2985 74.6465L83.0412 59.6756L81.8 58.4532Z" fill="black" />
+						<path d="M93.1304 2.71626L79.6573 16.3979L80.8986 17.6202L94.3717 3.93859L93.1304 2.71626Z" fill="black" />
+						<path d="M99.2443 80.252L89.3611 90.2882L90.6023 91.5106L100.486 81.4743L99.2443 80.252Z" fill="black" />
+						<path d="M103.288 84.2354L93.4045 94.2716L94.6458 95.4939L104.529 85.4577L103.288 84.2354Z" fill="black" />
+						<path d="M64.8406 52.6313L54.9574 62.6676L56.1986 63.8899L66.0819 53.8537L64.8406 52.6313Z" fill="black" />
+						<path d="M59.339 43.9855L37.215 66.452L38.4562 67.6743L60.5803 45.2078L59.339 43.9855Z" fill="black" />
+						<path d="M76.9277 48.1267L54.8036 70.5932L56.0449 71.8155L78.1689 49.349L76.9277 48.1267Z" fill="black" />
+						<path d="M38.0212 10.1424L11.9712 36.5956L13.1518 37.7582L39.2018 11.305L38.0212 10.1424Z" fill="black" />
+						<path d="M37.0455 18.2394L10.9955 44.6926L12.1761 45.8552L38.2261 19.402L37.0455 18.2394Z" fill="black" />
+						<path d="M109.706 0L74.8107 35.4352L76.2921 36.8941L111.187 1.45884L109.706 0Z" fill="black" />
+						<path d="M38.1325 24.8965L12.0826 51.3496L13.2632 52.5122L39.3131 26.059L38.1325 24.8965Z" fill="black" />
+						<path d="M109.664 29.9077L83.6136 56.3609L84.7942 57.5235L110.844 31.0703L109.664 29.9077Z" fill="black" />
+						<path d="M44.868 25.9032L0 71.4657L1.18058 72.6283L46.0486 27.0658L44.868 25.9032Z" fill="black" />
+						<path d="M98.9659 48.07L72.916 74.5232L74.0965 75.6858L100.147 49.2326L98.9659 48.07Z" fill="black" />
+						<path d="M104.528 20.1597L78.4776 46.6129L79.6582 47.7755L105.708 21.3223L104.528 20.1597Z" fill="black" />
+						<path d="M102.574 14.3686L76.5236 40.8218L77.7042 41.9844L103.754 15.5312L102.574 14.3686Z" fill="black" />
+						<path d="M108.425 46.5324L82.3753 72.9855L83.5559 74.1481L109.606 47.695L108.425 46.5324Z" fill="black" />
+						<path d="M34.1281 61.6414L8.07814 88.0946L9.25873 89.2572L35.3087 62.804L34.1281 61.6414Z" fill="black" />
+						<path d="M109.91 61.981L83.8605 88.4342L85.041 89.5968L111.091 63.1436L109.91 61.981Z" fill="black" />
+						<path d="M37.2904 50.504L11.2405 76.9571L12.421 78.1197L38.471 51.6666L37.2904 50.504Z" fill="black" />
+						<path d="M48.7113 30.31L9.18826 70.4448L10.3688 71.6074L49.8919 31.4726L48.7113 30.31Z" fill="black" />
+					</svg>
+				</div>
+				<div class="container">
+					<h3 class="map__title">Москва</h3>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<h1 class="title">обратная связь</h1>
+					<p class="sub__title">Мы готовы пообщаться лично</p>
+					<form class="feedback__form">
+						<div class="form__boxes">
+							<div class="form__box">
+								<div class="form__name">Имя <span>*</span></div>
+								<input type="text" name="name" placeholder="Ваше имя" id="one">
+								<label for="one" class="input__box">
+								</label>
+							</div>
+							<div class="form__box">
+								<div class="form__name">Телефон <span>*</span></div>
+								<input type="number" name="phone" placeholder="+7 (800) 000 00 00" id="two">
+								<label for="two" class="input__box">
+								</label>
+							</div>
+							<div class="form__box">
+								<div class="form__name">Почта <span>*</span></div>
+								<input type="email" name="email" placeholder="hello@inbox.ru" id="three">
+								<label for="three" class="input__box">
+								</label>
+								<span class="form__info">Заполняя форму обратной связи Вы соглашаетесь с условиями обработки
+									персональных
+									данных.</span>
+							</div>
+							<button class="yellow__btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<img src="images/icons/logo-two.svg" alt="logo" width="111" height="96">
+				<div class="row">
+					<div class="col">
+						<h4 class="footer__title">Neurotrops</h4>
+						<h3 class="title__sm">Сила природы</h3>
+						<p>Присоединяйтесь к нам!</p>
+						<div class="social__media">
+							<a href="#!">
+								<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M24 1.3623L20.1991 20.5067C20.1991 20.5067 19.669 21.837 18.2087 21.1968L12.8059 17.0563L9.34513 20.217C9.34513 20.217 9.07507 20.4271 8.775 20.2971L8.77829 20.2678L9.47499 14.316C9.47499 14.316 19.1872 5.58397 19.5873 5.21389C19.9874 4.8438 19.8574 4.76378 19.8574 4.76378C19.8774 4.31368 19.1372 4.76378 19.1372 4.76378L6.27025 12.9418L6.25594 12.9349L0.90472 11.1345C0.90472 11.1345 0.0845327 10.8445 0.00451441 10.2043C-0.0755039 9.56417 0.934727 9.2241 0.934727 9.2241L22.2496 0.862182C22.2496 0.862182 24 0.0920063 24 1.3623Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.0718 15.4874C4.87188 15.4874 0.194878 9.86587 0 0.511719H4.10743C4.24235 7.37743 7.27038 10.2856 9.66888 10.8852V0.511719H13.5366V6.43302C15.9051 6.17818 18.3933 3.47986 19.2328 0.511719H23.1004C22.4558 4.16943 19.7575 6.86775 17.8387 7.97705C19.7575 8.87649 22.8307 11.23 24 15.4874H19.7425C18.8281 12.6391 16.5497 10.4355 13.5366 10.1357V15.4874H13.0718Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9287 8L0.0722656 16L0.0722663 0L13.9287 8Z" fill="white" />
+								</svg>
+							</a>
+							<a href="#!">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 8.16C14.1257 8.16 15.84 9.87429 15.84 12C15.84 14.1257 14.1257 15.84 12 15.84C9.87429 15.84 8.16 14.1257 8.16 12C8.16 9.87429 9.87429 8.16 12 8.16ZM12 5.76C8.55429 5.76 5.76 8.55429 5.76 12C5.76 15.4457 8.55429 18.24 12 18.24C15.4457 18.24 18.24 15.4457 18.24 12C18.24 8.55429 15.4457 5.76 12 5.76Z"
+										fill="white" />
+									<path
+										d="M18.4114 7.02857C19.2067 7.02857 19.8514 6.38386 19.8514 5.58857C19.8514 4.79328 19.2067 4.14857 18.4114 4.14857C17.6161 4.14857 16.9714 4.79328 16.9714 5.58857C16.9714 6.38386 17.6161 7.02857 18.4114 7.02857Z"
+										fill="white" />
+									<path
+										d="M17.76 2.4C19.8857 2.4 21.6 4.11429 21.6 6.24V17.76C21.6 19.8857 19.8857 21.6 17.76 21.6H6.24C4.11429 21.6 2.4 19.8857 2.4 17.76V6.24C2.4 4.11429 4.11429 2.4 6.24 2.4H17.76ZM17.76 0H6.24C2.79429 0 0 2.79429 0 6.24V17.76C0 21.2057 2.79429 24 6.24 24H17.76C21.2057 24 24 21.2057 24 17.76V6.24C24 2.79429 21.2057 0 17.76 0Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+						<a class="phone__number" href="tel:+79672577729">+7 (967) 257 77 29</a>
+						<a class="email" href="mailto:hello@neurotrops.ru">hello@neurotrops.ru</a>
+					</div>
+					<div class="footer__right">
+						<div class="box">
+							<h4 class="footer__title">Продукция</h4>
+							<ul>
+								<li><a href="#!">Мухомор красный</a></li>
+								<li><a href="#!">Мухомор пантерный</a></li>
+								<li><a href="#!">Ежовик гребенчатый</a></li>
+								<li><a href="#!">Кордицепс</a></li>
+							</ul>
+						</div>
+						<div class="box">
+							<h4 class="footer__title">Покупка</h4>
+							<ul>
+								<li><a href="#!">Оплата</a></li>
+								<li><a href="#!">Доставка</a></li>
+								<li><a href="#!">Возврат</a></li>
+							</ul>
+						</div>
+						<div class="box">
+							<h4 class="footer__title">О магазине</h4>
+							<ul>
+								<li><a href="#!">О компании</a></li>
+								<li><a href="#!">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__bottom-info">Интернет-магазин грибной продукции высочайшего качества, Neurotrops 2024 г.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="question__box">
+		<div class="socail__media">
+			<a href="#!">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M12 8.16C14.1257 8.16 15.84 9.87429 15.84 12C15.84 14.1257 14.1257 15.84 12 15.84C9.87429 15.84 8.16 14.1257 8.16 12C8.16 9.87429 9.87429 8.16 12 8.16ZM12 5.76C8.55429 5.76 5.76 8.55429 5.76 12C5.76 15.4457 8.55429 18.24 12 18.24C15.4457 18.24 18.24 15.4457 18.24 12C18.24 8.55429 15.4457 5.76 12 5.76Z"
+						fill="white" />
+					<path
+						d="M18.4114 7.02857C19.2067 7.02857 19.8514 6.38386 19.8514 5.58857C19.8514 4.79328 19.2067 4.14857 18.4114 4.14857C17.6161 4.14857 16.9714 4.79328 16.9714 5.58857C16.9714 6.38386 17.6161 7.02857 18.4114 7.02857Z"
+						fill="white" />
+					<path
+						d="M17.76 2.4C19.8857 2.4 21.6 4.11429 21.6 6.24V17.76C21.6 19.8857 19.8857 21.6 17.76 21.6H6.24C4.11429 21.6 2.4 19.8857 2.4 17.76V6.24C2.4 4.11429 4.11429 2.4 6.24 2.4H17.76ZM17.76 0H6.24C2.79429 0 0 2.79429 0 6.24V17.76C0 21.2057 2.79429 24 6.24 24H17.76C21.2057 24 24 21.2057 24 17.76V6.24C24 2.79429 21.2057 0 17.76 0Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a href="#!">
+				<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M13.0718 15.4874C4.87188 15.4874 0.194878 9.86587 0 0.511719H4.10743C4.24235 7.37743 7.27038 10.2856 9.66888 10.8852V0.511719H13.5366V6.43302C15.9051 6.17818 18.3933 3.47986 19.2328 0.511719H23.1004C22.4558 4.16943 19.7575 6.86775 17.8387 7.97705C19.7575 8.87649 22.8307 11.23 24 15.4874H19.7425C18.8281 12.6391 16.5497 10.4355 13.5366 10.1357V15.4874H13.0718Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a href="#!">
+				<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M24 1.3623L20.1991 20.5067C20.1991 20.5067 19.669 21.837 18.2087 21.1968L12.8059 17.0563L9.34513 20.217C9.34513 20.217 9.07507 20.4271 8.775 20.2971L8.77829 20.2678L9.47499 14.316C9.47499 14.316 19.1872 5.58397 19.5873 5.21389C19.9874 4.8438 19.8574 4.76378 19.8574 4.76378C19.8774 4.31368 19.1372 4.76378 19.1372 4.76378L6.27025 12.9418L6.25594 12.9349L0.90472 11.1345C0.90472 11.1345 0.0845327 10.8445 0.00451441 10.2043C-0.0755039 9.56417 0.934727 9.2241 0.934727 9.2241L22.2496 0.862182C22.2496 0.862182 24 0.0920063 24 1.3623Z"
+						fill="white" />
+				</svg>
+			</a>
+			<a href="#!">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M0.647507 18.3015C0.647507 18.3015 2.08127 17.097 2.78122 16.5887C3.43601 16.1024 4.49723 15.4505 5.08428 15.1189C6.13421 14.5332 7.218 14.8979 7.65829 15.4836L8.58403 16.6439C9.05819 17.2296 9.792 17.1302 9.98393 17.097C11.35 16.7655 12.8063 15.9256 14.2852 14.5222C15.7867 13.0966 16.7012 11.6158 17.0173 10.0687L17.0399 9.96928C17.1302 9.33939 17.0173 9.04101 16.7576 8.61003L16.7125 8.56583C16.0915 8.00224 14.9287 7.30604 14.7707 6.643C14.3191 5.49372 16.2948 3.11781 16.577 2.69788C16.577 2.69788 18.0108 0.84135 18.5188 0.476675C19.072 0.0235937 19.9187 -0.230574 20.788 0.288812L20.8331 0.321964C23.3055 1.95748 24.2087 2.90784 23.9603 4.31129L23.8249 4.87488C22.5717 8.74264 20.1445 12.8756 16.5318 16.5555C12.9531 20.1912 9.09206 22.3572 5.2762 23.8711C4.28273 24.1916 3.25538 23.9153 2.20546 23.0313L2.18288 23.0202C1.37004 22.2798 0.737823 21.4952 0.263664 20.6443V20.6222C-0.199206 19.7271 -0.0411526 18.8762 0.647507 18.3015Z"
+						fill="white" />
+				</svg>
+			</a>
+		</div>
+		<button class="question__box-btn" aria-label="question box button">
+			<img src="images/icons/question.svg" alt="question icon" width="22" height="24">
+		</button>
+	</div>
+
+	<!-- swiper js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- custom js -->
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

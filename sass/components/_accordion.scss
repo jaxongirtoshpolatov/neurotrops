@@ -1,0 +1,49 @@
+.accordion__box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.accordion {
+  overflow: hidden;
+  &.is__open {
+    .accordion__content {
+      height: auto;
+      max-height: 100%;
+    }
+    .accordion__arrow {
+      transform: rotate(45deg);
+    }
+    .accordion__header {
+      padding-bottom: 10px;
+    }
+    .accordion__title {
+      opacity: 0.55;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+  }
+  &__arrow {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s linear;
+  }
+  &__title {
+    font-family: "TT Autonomous Trl Bold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-transform: uppercase;
+  }
+  &__content {
+    padding-top: 10px;
+    transform-origin: top;
+    height: 0;
+    transition: all 0.2s linear;
+    max-height: 0;
+  }
+}
