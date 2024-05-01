@@ -841,6 +841,12 @@ body.no-scroll {
   padding: 40px;
   max-width: 1180px;
   width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 102;
+  overflow-y: scroll;
 }
 .call__back-modal .modal__header {
   align-items: start;
@@ -1031,7 +1037,7 @@ body.no-scroll {
   left: 0;
   padding: 20px 0;
   background: linear-gradient(179deg, rgba(66, 66, 66, 0.75) 31.25%, rgba(0, 0, 0, 0.75) 93.13%);
-  z-index: 999;
+  z-index: 100;
 }
 .header .container {
   display: flex;
@@ -2549,6 +2555,10 @@ body.no-scroll {
     background: #000;
     opacity: 1;
   }
+  .call__back-modal .modal__content {
+    max-width: 100%;
+    height: 100vh;
+  }
 }
 @media screen and (max-width: 1150px) {
   .card__img {
@@ -3084,6 +3094,35 @@ body.no-scroll {
   .footer .container > img {
     width: 74px;
     height: 64px;
+  }
+  .call__back-modal .modal__header {
+    padding-bottom: 0;
+  }
+  .call__back-modal .modal__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  .call__back-modal .line {
+    margin: 10px 0;
+  }
+  .call__back-modal .tab__box {
+    padding: 0;
+  }
+  .call__back-modal .tab__box .tab__header {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .call__back-modal .tab__box .tab__el {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  .call__back-modal .tab__box .yellow__btn {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
   }
 }
 @media screen and (max-width: 800px) {

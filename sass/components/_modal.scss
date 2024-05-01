@@ -78,6 +78,12 @@
     padding: 40px;
     max-width: 1180px;
     width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 102;
+    overflow-y: scroll;
   }
   .modal__header {
     align-items: start;
